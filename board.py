@@ -43,7 +43,7 @@ if __name__ == "__main__":
 
     board = [
       ['X', "O", "."],
-      ['X', "O", "."]
+      ['X', "O", "."],
       ['0', "X", "."]
     ]
     print("""
@@ -62,7 +62,7 @@ if __name__ == "__main__":
     board_1 = [
       ["X", "O", "."],
       ["X", "O", "."],
-      ["X", "X", "O"],
+      ["X", "X", "O"]
     ]
     print("Should return False")
     print(is_board_full(board_1)) 
@@ -70,7 +70,7 @@ if __name__ == "__main__":
     board_2 = [
       [".", "O", "O"],
       [".", "O", "X"],
-      [".", "X", "X"],
+      [".", "X", "X"]
     ]
     print("Should return False")
     print(is_board_full(board_2)) 
@@ -78,7 +78,7 @@ if __name__ == "__main__":
     board_3 = [
       ["O", "O", "X"],
       ["O", "X", "O"],
-      ["O", "X", "X"],
+      ["O", "X", "X"]
     ]
     print("Should return True")
     print(is_board_full(board_3)) 
@@ -86,7 +86,7 @@ if __name__ == "__main__":
     board_4 = [
       ["X", "O", "."],
       ["X", "O", "."],
-      ["X", "X", "O"],
+      ["X", "X", "O"]
     ]
     print("Should return X")
     print(get_winning_player(board_4))
@@ -94,7 +94,7 @@ if __name__ == "__main__":
     board_5 = [
       ["X", "O", "O"],
       ["X", "O", "."],
-      ["O", "X", "X"],
+      ["O", "X", "X"]
     ]
     print("Should return O")
     print(get_winning_player(board_5))
@@ -102,7 +102,7 @@ if __name__ == "__main__":
     board_6 = [
       ["O", "O", "."],
       ["O", "X", "."],
-      [".", "X", "."],
+      [".", "X", "."]
     ]
     print("Should return None")
     print(get_winning_player(board_6))
