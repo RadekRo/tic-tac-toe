@@ -5,9 +5,9 @@ def get_empty_board():
     '''
     pass
 
-
+#COMPLETED
 def display_board(board):
-  """
+  """ 
   Should print the tic tac toe board in a format similar to
        1   2   3
     A   X | O | . 
@@ -27,7 +27,7 @@ def display_board(board):
   C     {board[2][0]}  |  {board[2][1]}  |  {board[2][2]}
       -----+-----+-----
   """)
-  
+
 
 def is_board_full(board):
   """
