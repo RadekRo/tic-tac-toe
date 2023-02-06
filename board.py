@@ -3,7 +3,7 @@ def get_empty_board():
     Should return a list with 3 sublists.
     Each sublist should contain 3 time the "." character
     '''
-    pass
+    return [[".", ".", "."], [".", ".", "."], [".", ".", "."]]
 
 #COMPLETED
 def display_board(board):
