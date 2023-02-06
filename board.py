@@ -29,7 +29,7 @@ def display_board(board):
       -----+-----+-----
   """)
 
-
+#COMPLETED
 def is_board_full(board):
   """
   should return True if there are no more empty place on the board,
@@ -37,13 +37,26 @@ def is_board_full(board):
   """
   return board[0].count(".") + board[1].count(".") + board[2].count(".") == 0
 
-
+#COMPLETED
 def get_winning_player(board):
   """
   Should return the player that wins based on the tic tac toe rules.
   If no player has won, than "None" is returned.
   """
-  pass
+  wins = []
+  
+  for i in range (0,3):
+    wins.append([board[i][0], board[i][1], board[i][2]])
+    wins.append([board[0][i], board[1][i], board[2][i]])
+  wins.append([board[0][0], board[1][1], board[2][2]])
+  wins.append([board[0][2], board[1][1], board[2][0]])
+  
+  win_X = wins.count(["X", "X", "X"])
+  win_O = wins.count(["O", "O", "O"])
+  if win_X == 1:
+    return "X"
+  elif win_O == 1:
+    return "O"
 
 
 # run this file to test whether you have correctly implemented the functions
