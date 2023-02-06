@@ -1,3 +1,4 @@
+#COMPLETED
 def get_empty_board():
     '''
     Should return a list with 3 sublists.
@@ -34,7 +35,7 @@ def is_board_full(board):
   should return True if there are no more empty place on the board,
   otherwise should return False
   """
-  pass
+  return board[0].count(".") + board[1].count(".") + board[2].count(".") == 0
 
 
 def get_winning_player(board):
