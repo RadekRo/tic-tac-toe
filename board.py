@@ -1,4 +1,3 @@
-#COMPLETED
 def get_empty_board():
     '''
     Should return a list with 3 sublists.
@@ -6,7 +5,6 @@ def get_empty_board():
     '''
     return [[".", ".", "."], [".", ".", "."], [".", ".", "."]]
 
-#COMPLETED
 def display_board(board):
   """ 
   Should print the tic tac toe board in a format similar to
@@ -29,7 +27,6 @@ def display_board(board):
       -----+-----+-----
   """)
 
-#COMPLETED
 def is_board_full(board):
   """
   should return True if there are no more empty place on the board,
@@ -37,7 +34,6 @@ def is_board_full(board):
   """
   return board[0].count(".") + board[1].count(".") + board[2].count(".") == 0
 
-#COMPLETED
 def get_winning_player(board):
   """
   Should return the player that wins based on the tic tac toe rules.
