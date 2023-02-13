@@ -18,7 +18,13 @@ def main():
         ### TO DO ###
         # in each new iteration of the while loop the program should 
         # alternate the value of `current_player` from `X` to `O`
-        current_player = 'X'
+        match current_player:
+            case "X":
+                current_player = "O"
+            case "O":
+                current_player = "X"
+            case _:
+                current_player = "X"
         
         ### TO DO ###
         # based on the value of the variables `game_mode` and `current_player` 
