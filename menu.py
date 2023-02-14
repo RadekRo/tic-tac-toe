@@ -1,4 +1,4 @@
-def get_menu_option():
+def get_menu_option(msg):
   '''
   Should print a menu with the following options:
   1. Human vs Human
@@ -12,9 +12,8 @@ def get_menu_option():
   '''
   pass
 
-
 if __name__ == "__main__":
     # run this file to test you have implemented correctly the function
-    option = get_menu_option()
+    option = get_menu_option("")
     print("If the user selected 1, it should print 1")
     print(option) 

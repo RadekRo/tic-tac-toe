@@ -20,10 +20,13 @@ def get_menu_option(msg):
    get_menu_option("please choose correct number")
 
   else:
-    return get_menu_option("") 
-  
-get_menu_option("")
-  
+    return menu_option
+ 
+if __name__ == "__main__":
+    # run this file to test you have implemented correctly the function
+    option = get_menu_option()
+    print("If the user selected 1, it should print 1")
+    print(option)   
   
 
   
