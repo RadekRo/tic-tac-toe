@@ -13,7 +13,14 @@ def get_human_coordinates(board, current_player):
             row = list(move_pos)[0]
             col = list(move_pos)[1]
             if row in alphabet_valid and col in numbers_valid and board[alphabet_to_index[row]][numbers_to_index[col]] == ".":
-                return row, col
+                match row:
+                  case "A":
+                    row = 0
+                  case "B":
+                    row = 1
+                  case "C":
+                    row = 3
+                return int(row), int(col)-1
             else:
                 print("This position is taken.")
         else:

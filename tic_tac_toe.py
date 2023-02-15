@@ -43,16 +43,8 @@ def main():
                     x, y = get_human_coordinates(board, current_player)
                 else:
                     x, y = get_unbeatable_ai_coordinates(board, current_player)
-        match x:
-            case "A":
-                x = 0
-            case "B":
-                x = 1
-            case "C":
-                x = 2
-
-
-        board[int(x)][int(y)-1] = current_player
+       
+        board[x][y] = current_player
         
         ### TO DO ###
         # based on the values of `winning_player` and `its_a_tie` the program
