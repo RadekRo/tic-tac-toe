@@ -1,0 +1,3 @@
+# ignore pycache catalogue
+__pycache__/
+
