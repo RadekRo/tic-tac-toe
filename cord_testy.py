@@ -38,6 +38,9 @@ def get_random_ai_coordinates(board, current_player):
             continue
     return row, col
 
+def get_unbeatable_ai_coordinates(board, current_player):
+  pass
+
 if __name__ == "__main__":
   board_1 = [
     ["X", "X", "."],
