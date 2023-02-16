@@ -1,6 +1,6 @@
 from board import display_board, get_empty_board, is_board_full, get_winning_player
-from cord_testy import get_human_coordinates, get_random_ai_coordinates, get_unbeatable_ai_coordinates
-from menu_tested import get_menu_option
+from coordinates import get_human_coordinates, get_random_ai_coordinates, get_unbeatable_ai_coordinates
+from menu import get_menu_option
 
 HUMAN_VS_HUMAN = 1
 RANDOM_AI_VS_RANDOM_AI = 2
