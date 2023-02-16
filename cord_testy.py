@@ -41,8 +41,6 @@ def get_random_ai_coordinates(board, current_player):
         col = random.randrange(len(board[row]))
         if board[row][col] == '.':
             break
-        else:
-            continue
     return row, col
 
 def get_unbeatable_ai_coordinates(board, current_player):
