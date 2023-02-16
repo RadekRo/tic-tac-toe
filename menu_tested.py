@@ -5,14 +5,17 @@ def clear():
     _ = system("cls")
   else:
     _ = system("clear")
-  print("""
-  WRONG CHOICE! 
-  Please choose correct number!
-  *****************************""")
 
 def get_menu_option():
-  
-  menu_option = int(input("""  Choose your game option \u2193
+  show_error_msg = 0
+  while True:
+    clear()
+    if show_error_msg == 1:
+      print("""  INPUT ERROR. WRONG CHOICE!
+  You can choose only from numbers between 1 and 4!
+  *************************************************
+      """)
+    menu_option = int(input("""  Choose your game option \u2193
   -------------------------
   1. Human vs Human
   2. Random AI vs Random AI
@@ -20,12 +23,11 @@ def get_menu_option():
   4. Human vs Unbeatable AI
   Your choice: """))
   
-  if menu_option < 1 or menu_option > 4:
-    clear()
-    get_menu_option()
-  else:
-    return menu_option
- 
+    if menu_option > 0 and menu_option < 5:
+      return menu_option
+    else:
+      show_error_msg = 1
+
 if __name__ == "__main__":
     # run this file to test you have implemented correctly the function
     option = get_menu_option()
