@@ -10,8 +10,8 @@ def get_human_coordinates(board, current_player):
         move_pos = input("Please enter your move: ")
         move_pos = move_pos.upper()
         if move_pos != "" and len(move_pos) == 2:
-            row = list(move_pos)[0]
-            col = list(move_pos)[1]
+            row = move_pos[0]
+            col = move_pos[1]
             if row in alphabet_valid and col in numbers_valid and board[alphabet_to_index[row]][numbers_to_index[col]] == ".":
                 match row:
                   case "A":
