@@ -1,6 +1,6 @@
 from board import display_board, get_empty_board, is_board_full, get_winning_player
 import random
-current_player = ""
+#current_player = ""
 def get_human_coordinates(board, current_player):
     alphabet_to_index = {'A': 0, 'B': 1, 'C': 2}
     numbers_to_index = {'1': 0, '2': 1, '3': 2}
@@ -19,7 +19,7 @@ def get_human_coordinates(board, current_player):
                   case "B":
                     row = 1
                   case "C":
-                    row = 3
+                    row = 2
                 return int(row), int(col)-1
             else:
                 print("This position is taken.")
@@ -41,6 +41,8 @@ def get_random_ai_coordinates(board, current_player):
         col = random.randrange(len(board[row]))
         if board[row][col] == '.':
             break
+        else:
+            continue
     return row, col
 
 def get_unbeatable_ai_coordinates(board, current_player):
